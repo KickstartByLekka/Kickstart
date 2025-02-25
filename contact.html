@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kickstart - Let's Connect</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
+      /* Basic Reset & Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Geist", sans-serif; /* Custom or fallback to sans-serif */
+        letter-spacing: -0.04em; /* ~ -4% */
+      }
+
+      /* Body */
+      body {
+        line-height: 1.6;
+        color: #333;
+        max-width: 100vw;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      /* Page Container (entire document) */
+      .page-container {
+        width: 90%;
+        max-width: 376px; /* Limit the entire page to 376px wide */
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 120px;
+        margin-bottom: 120px;
+      }
+
+      /* Logo and Header */
+      header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 2.5rem;
+        position: relative;
+        width: 100%;
+        gap: 1.5rem;
+      }
+
+      .logo {
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family: "Courier New", monospace;
+      }
+
+      .availability-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 116px;
+        height: 22px;
+        padding: 4px 8px;
+        background-color: #f9fff7;
+        border: 1px solid #cfe3c9;
+        border-radius: 16px;
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 0.75rem;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        text-align: center;
+        color: #a1c397;
+      }
+
+      .status-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 6px;
+        background-color: #4caf50;
+      }
+
+      /* Main Section */
+      main {
+        flex: 1; /* Allows main to expand and push footer down if needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .lets-connect {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+
+      /* Contact Section */
+      .contact-section {
+        width: 100%;
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        border-color: #f1f1f1;
+        border-style: solid;
+      }
+
+      .contact-section h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+
+      /* Form Elements */
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      form input,
+      form textarea {
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+      }
+
+      form input,
+      form textarea {
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+      }
+
+      form input:focus,
+      form textarea:focus {
+        outline: none;
+        border-color: #333;
+        background-color: #f1f1f1;
+      }
+
+      form button {
+        background-color: #1e1e1e;
+        color: #fff;
+        border: none;
+        padding: 0.75rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 400;
+        transition: background-color 0.3s ease;
+        margin-top: 1.25rem;
+        font-size: 0.875rem;
+      }
+
+      form button:hover {
+        background-color: #333;
+      }
+
+      ::placeholder {
+        font-family: inherit;
+        color: #a9a9a9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <div class="logo">
+          <svg
+            width="227"
+            height="31"
+            viewBox="0 0 227 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.867 30.517V0.0139995H6.836V16.041H9.139V12.093H17.458V8.051H23.474V14.443H19.291V18.438H10.972V20.083H19.291V24.125H23.474V30.517H17.458V26.522H9.139V22.48H6.836V30.517H0.867ZM27.3063 30.517V8.051H33.2753V30.517H27.3063ZM27.3063 6.453V0.0139995H33.2753V6.453H27.3063ZM40.3485 30.517V26.522H36.2125V12.093H40.3485V8.051H54.6365V12.093H58.8195V18.438H52.8035V14.443H42.1815V24.125H52.8035V20.083H58.8195V26.522H54.6365V30.517H40.3485ZM61.7338 30.517V0.0139995H67.7028V16.041H70.0058V12.093H78.3248V8.051H84.3408V14.443H80.1578V18.438H71.8388V20.083H80.1578V24.125H84.3408V30.517H78.3248V26.522H70.0058V22.48H67.7028V30.517H61.7338ZM87.2552 30.517V24.125H103.846V22.48H91.3912V18.438H87.2552V12.093H91.3912V8.051H109.862V14.443H93.2242V16.041H105.679V20.083H109.862V26.522H105.679V30.517H87.2552ZM121.967 30.517V26.522H117.831V14.443H113.695V8.051H117.831V0.0139995H123.8V8.051H136.302V14.443H123.8V24.125H134.469V20.083H140.485V26.522H136.302V30.517H121.967ZM147.07 30.517V26.522H142.934V12.093H147.07V8.051H161.358V12.093H165.541V24.125H169.724V30.517H163.708V26.522H161.358V30.517H147.07ZM148.903 24.125H159.525V14.443H148.903V24.125ZM173.596 30.517V12.093H177.732V8.051H192.02V12.093H196.203V18.438H190.187V14.443H179.565V30.517H173.596ZM208.307 30.517V26.522H204.171V14.443H200.035V8.051H204.171V0.0139995H210.14V8.051H222.642V14.443H210.14V24.125H220.809V20.083H226.825V26.522H222.642V30.517H208.307Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+        <button class="availability-button">
+          <span class="status-dot"></span>
+          Available Now
+        </button>
+      </header>
+
+      <main>
+        <section class="contact-section">
+          <p class="lets-connect">Let's Connect</p>
+          <form>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+
+            <button type="submit">Get In Touch</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
